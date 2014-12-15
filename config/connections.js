@@ -28,6 +28,17 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
+  inMemoryDb: {
+    adapter: 'sails-memory'
+  },
+
+  /***************************************************************************
+  *                                                                          *
+  * Local disk storage for DEVELOPMENT ONLY                                  *
+  *                                                                          *
+  * Installed by default.                                                    *
+  *                                                                          *
+  ***************************************************************************/
   localDiskDb: {
     adapter: 'sails-disk'
   },
@@ -74,12 +85,16 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-  somePostgresqlServer: {
+  postgresqlServer: {
     adapter: 'sails-postgresql',
-    host: 'YOUR_POSTGRES_SERVER_HOSTNAME_OR_IP_ADDRESS',
-    user: 'YOUR_POSTGRES_USER',
-    password: 'YOUR_POSTGRES_PASSWORD',
-    database: 'YOUR_POSTGRES_DB'
+    host: '192.168.1.102',
+    user: 'sails_addressbook_user',
+    password: 'sails_addressbook_user',
+    database: 'sails_addressbook',
+    meta: {
+        schemaName: 'sails_addressbook'
+    }
+//    schema: 'sails_addressbook'
   }
 
 

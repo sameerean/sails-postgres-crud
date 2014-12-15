@@ -33,8 +33,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    controller: 'home',
+    action: "default",
+//    view: 'homepage'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +47,40 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+
+ 'get /contact': {
+    controller: 'contact',
+    action: "findall",
+//    view: 'user/list'
+  },
+  'get /contact/new': {
+    controller: 'contact',
+    action: "new",
+  },
+  'get /contact/find': {
+    controller: 'contact',
+    action: "showFind",
+  },
+  'get /contact/reset': {
+    controller: 'contact',
+    action: "resetData",
+  },
+  'get /contact/:pid': {
+    controller: 'contact',
+    action: "find",
+  },
+  'post /contact': {
+    controller: 'contact',
+    action: "create",
+  },
+  'put /contact': {
+    controller: 'contact',
+    action: "update",
+  },
+  'delete /contact': {
+    controller: 'contact',
+    action: "delete",
+  },
 
 };
