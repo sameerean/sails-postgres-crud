@@ -1,3 +1,5 @@
-# sails-postgres-crud
+#sails-postgres-crud
+===================
 
-a [Sails](http://sailsjs.org) application
+A SailsJS web application that demonstrates basic CRUD operations on an in-memory database using Waterline ORM 
+
