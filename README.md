@@ -1,5 +1,4 @@
 #sails-postgres-crud
-===================
 
 A SailsJS web application that demonstrates basic CRUD operations on a Postgtres database using Waterline ORM. It illustrates the following features/best practices.
 
@@ -11,6 +10,7 @@ A SailsJS web application that demonstrates basic CRUD operations on a Postgtres
 - Persisting data into a Postgres DB, using [Waterline](https://github.com/balderdashy/waterline) ORM.
 - Domain Driven Design around Domain Models 
 - Nice usage of Java script [Promises](https://www.promisejs.org/).
+- Usage of asynchronous [bootstrap](https://github.com/sameerean/sails-postgres-crud/blob/master/config/bootstrap.js) functions.
 
 Setup
 --------
