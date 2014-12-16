@@ -181,8 +181,9 @@ module.exports = {
         });
     },
     resetData: function (req, res) {
-        ContactService.preloadData();
-        return res.redirect("contact");
+        ContactService.preloadData(function(_contacts) {
+            return res.redirect("contact");
+        });
     }
 
 };

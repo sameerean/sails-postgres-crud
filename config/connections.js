@@ -28,9 +28,11 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
+ /*
   inMemoryDb: {
     adapter: 'sails-memory'
   },
+    */
 
   /***************************************************************************
   *                                                                          *
@@ -39,9 +41,12 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
+ 
+ /*
   localDiskDb: {
     adapter: 'sails-disk'
   },
+    */
 
   /***************************************************************************
   *                                                                          *
@@ -51,6 +56,8 @@ module.exports.connections = {
   * Run: npm install sails-mysql                                             *
   *                                                                          *
   ***************************************************************************/
+ 
+ /*
   someMysqlServer: {
     adapter: 'sails-mysql',
     host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
@@ -58,6 +65,7 @@ module.exports.connections = {
     password: 'YOUR_MYSQL_PASSWORD',
     database: 'YOUR_MYSQL_DB'
   },
+    */
 
   /***************************************************************************
   *                                                                          *
@@ -67,6 +75,7 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
+ /*
   someMongodbServer: {
     adapter: 'sails-mongo',
     host: 'localhost',
@@ -75,7 +84,7 @@ module.exports.connections = {
     // password: 'password',
     // database: 'your_mongo_db_name_here'
   },
-
+*/
   /***************************************************************************
   *                                                                          *
   * PostgreSQL is another officially supported relational database.          *
@@ -91,9 +100,11 @@ module.exports.connections = {
     user: 'sails_addressbook_user',
     password: 'sails_addressbook_user',
     database: 'sails_addressbook',
-    meta: {
-        schemaName: 'sails_addressbook'
-    }
+    
+    // TODO: This schemaName thing didnt work.
+//    meta: {
+//        schemaName: 'sails_addressbook'
+//    }
 //    schema: 'sails_addressbook'
   }
 

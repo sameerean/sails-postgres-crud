@@ -7,6 +7,7 @@
 
 module.exports = {
     tableName: "T_CONTACT",
+    // TODO: This schemaName thing didnt work.
 //        schemaName: 'sails_addressbook',
     meta: {
         schemaName: "sails_addressbook"
